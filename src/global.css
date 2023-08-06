@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+::-webkit-scrollbar {
+    background: #000;
+    width: 10px; /* ширина полоски */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #01a4ef; /* колір полоски */
+}
+
+/* При наведенні курсора на полоску прокрутки */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* змінюємо колір при наведенні */
+}
+
+/* Для горизонтальної полоски прокрутки */
+::-webkit-scrollbar.horizontal {
+    display: none;
+}
+
+/* Стилізація стрілок в кінцях полоски прокрутки */
+::-webkit-scrollbar-button {
+    display: none; /* приховуємо стрілки */
+}

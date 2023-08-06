@@ -1,0 +1,116 @@
+.container{
+    height: 100vh;
+    background: #000000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img{
+    padding: 1%;
+    width: 30%;
+    border: 2px solid #01a4ef;
+    border-radius: 100%;
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: opacity 2s ease-out, transform 2s ease-out;
+}
+
+.img.active{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.textContainer1{
+    line-height: 60px;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 2s ease-out, transform 2s ease-out;
+
+}
+
+.textContainer1.active{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.textContainer2{
+    line-height: 60px;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 2s ease-out, transform 2s ease-out;
+}
+
+.textContainer2.active{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.text{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    background: #77c6ec;
+    margin: 10%;
+    width: 100%;
+    border-radius: 10px;
+    padding: 3%;
+}
+
+@media (max-width: 768px) {
+    .container{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    .container > * {
+        padding: 10px; /* Однакова відстань між всіма сторонами */
+    }
+    .textContainer1{
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+        grid-gap: 10px;
+        line-height: 30px;
+        opacity: 0;
+        transform: translateX(0);
+        transition: opacity 2s ease-out, transform 2s ease-out;
+    }
+    .textContainer1.active{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    .text{
+        font-size: 16px;
+        padding: 1%;
+        margin: 0;
+    }
+    .textContainer2{
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+        grid-gap: 10px;
+        line-height: 30px;
+        opacity: 0;
+        transform: translateX(0);
+        transition: opacity 2s ease-out, transform 2s ease-out;
+    }
+    .textContainer2.active{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    .img{
+        margin: 0;
+        opacity: 0;
+        transform: translateY(0);
+        transition: opacity 2s ease-out, transform 2s ease-out;
+    }
+
+    .img.active{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}

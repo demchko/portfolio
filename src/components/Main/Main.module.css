@@ -1,0 +1,83 @@
+.main{
+    background-image: url("/public/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.container{
+    top: 40%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text{
+    color: white;
+    margin-right: 4%;
+    font-size: 45px;
+    -webkit-text-stroke-width: 1px; /* Ширина контуру */
+    -webkit-text-stroke-color: #742d80; /* Колір контуру */
+    font-family: Verdana;
+}
+
+.text span{
+    color: #0098e4;
+    font-weight: bold;
+    font-size: 45px;
+    -webkit-text-stroke-width: 1px; /* Ширина контуру */
+    -webkit-text-stroke-color: black; /* Колір контуру */
+}
+
+.link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background: #742d80;
+    color: white;
+    padding: 1%;
+    width: 15%;
+    height: 60px;
+    font-size: 22px;
+    margin-left: 8%;
+    border-radius: 15px;
+    transform: scale(1);
+    font-weight: bold;
+    border: 2px solid black;
+    opacity: 0.5;
+    transition: opacity 2s ease-out, transform 2s ease-out;
+
+}
+
+.link.active{
+    opacity: 1;
+}
+
+.link:hover{
+    box-shadow: 2px 2px 5px #da6397;
+    transform: scale(1.1);
+    transition: 0.5s all ease;
+}
+
+@media (max-width: 768px) {
+    .container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .link{
+        width: 50%;
+        margin-bottom: 5%;
+        margin-left: 0;
+    }
+    .text{
+        font-size: 30px;
+    }
+    .text span{
+        font-size: 30px;
+    }
+}

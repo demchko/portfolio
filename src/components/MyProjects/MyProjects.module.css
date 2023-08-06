@@ -1,0 +1,111 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #010a0e;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: 22px;
+}
+
+.block{
+    width: 40%;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 2s ease-out, transform 2s ease-out;
+}
+
+.block.active{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.block h1{
+    font-size: 40px;
+    font-family: Verdana;
+}
+
+.text{
+    margin-top: 5%;
+    border-left: 2px solid #01a4ef;
+    padding-left: 4%;
+}
+
+.textBlock{
+    margin-bottom: 4%;
+}
+
+.link{
+    color: white;
+    text-decoration: 1px underline #01a4ef;
+    transition: 0.5s;
+}
+
+.link:hover{
+    color: #01a4ef;
+    text-decoration: 1px underline white;
+    transition: 0.5s;
+}
+
+.projects{
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 2s ease-out, transform 2s ease-out;
+}
+
+.projects.active{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.projects h1{
+    font-size: 40px;
+    margin-bottom: 30%;
+    font-family: Verdana;
+}
+
+.list{
+    width: 100%;
+    padding-left: 20%;
+    padding-top: 20%;
+    border-top: 1px solid #01a4ef;
+    border-left: 1px solid #01a4ef;
+}
+
+.list li{
+    margin-top: 5%;
+    cursor: pointer;
+    line-height: 30px;
+    list-style: none;
+}
+
+.list li:hover{
+    color: lightgrey;
+}
+
+
+.activeText{
+    color: #01a4ef;
+}
+
+@media (max-width: 768px) {
+    .container{
+        flex-direction: column-reverse;
+        text-align: center;
+        justify-content: center;
+    }
+    .block{
+        width: 90%;
+    }
+    .block h1{
+        font-size: 25px;
+    }
+    .projects{
+        text-align: center;
+        margin-bottom: 10%;
+    }
+    .projects h1{
+        font-size: 25px;
+    }
+}

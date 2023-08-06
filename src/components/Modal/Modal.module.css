@@ -1,0 +1,45 @@
+.modal {
+    display: none;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000004;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s;
+    z-index: 1000;
+}
+
+.modal.open{
+    display: flex;
+}
+
+.modalContent {
+    background-color: #000004;
+    padding: 20px;
+    color: #01a4ef;
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+/* Анімація для тексту */
+.modalContent p {
+    font-size: 80px;
+    font-family: Stencil;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: fadeIn 0.1s steps(1, end);
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+
+    }
+}

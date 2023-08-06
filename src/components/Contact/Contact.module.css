@@ -1,0 +1,75 @@
+.contact{
+    width: 100%;
+    height: 100vh;
+    background-color: #01a4ef;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info{
+    margin-left: 8%;
+    width: 50%;
+}
+
+.info h1{
+    font-size: 60px;
+    margin-bottom: 2%;
+}
+
+.text{
+    font-size: 30px;
+    color: #1f1f1f;
+    margin-bottom: 2%;
+}
+
+.block{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+    grid-gap: 20px; /* Відступ між елементами */
+}
+
+.block a{
+    color: black;
+    text-decoration: none;
+}
+
+.block img{
+    width: 20%;
+    /*height: 100%;*/
+}
+
+.imgBlock{
+    width: 50%;
+}
+
+.imgBlock img{
+    width: 80%;
+}
+
+@media (max-width: 768px) {
+    .contact{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .info{
+        width: 100%;
+        margin: 0;
+    }
+    .info h1{
+        font-size: 30px;
+    }
+    .text{
+        font-size: 20px;
+    }
+    .block{
+        width: 90%;
+    }
+    .link{
+        margin-right: 20%;
+    }
+    .block p{
+        font-size: 16px;
+    }
+}
