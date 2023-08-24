@@ -11,6 +11,7 @@ const MyProjects = ({projects}) => {
         {id: 3, title: 'Cards Memory', technologies: 'HTML, CSS, Pure JS', description: 'A simple application written in pure JS, where the user can enter a word and its translation. Then they can interact with it and memorise it', link: 'https://github.com/demchko/Translate-Cards-Memory'},
         {id: 3, title: 'Tasks Manager', technologies: 'HTML, CSS, TypeScript, Redux, React JS, Chakra UI', description: 'A login application where you can create and edit tasks for yourself and other users. The project uses TypeScript for typing and Redux', link: 'https://github.com/demchko/Task_Manager'},
     ])
+
     const handleTextClick = (index) => {
         setActiveBlock(index === activeBlock ? null : index);
     };
