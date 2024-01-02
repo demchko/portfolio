@@ -6,6 +6,7 @@ const MyProjects = ({projects}) => {
 
     const [activeBlock, setActiveBlock] = useState(0);
     const [projectData] = useState([
+        {id: 5, title: 'WebShop', technologies: 'React JS, Redux JS', description: 'React Js application, shop-hunting', link: 'https://github.com/demchko/Shop', site: 'https://shop-sand-zeta.vercel.app/'},
         {id: 12, title: 'Film Searching', technologies: 'React JS, TypeScript, Work wuth API', description: 'React JS Application for searching film, seris and getting information about them', link: 'https://github.com/demchko/FilmSearch', site: 'https://film-search-five.vercel.app/'},
         {id: 1, title: 'Delivery Shop', technologies: 'React JS, Redux ToolKit, Chakra UI, Firebase', description: '💻A simple website for food delivery, with the possibility of registration and login, thanks to firebase, also the goods that were added to the carts are added to localStorage, so that the data is not lost after the page is closed. ❇️Also, the project allowed me to practice with the useContext() hook, I used it to get and change the state of the modal window', link: 'https://github.com/demchko/delivery-shop'},
         {id: 2, title: 'Meditation App', technologies: 'HTML, CSS, Pure JS', description: '💻A simple website for meditation. You can set a timer and start meditating and then hear a calm melody', link: 'https://github.com/demchko/Meditation-Timer', site: 'https://meditation-timer-amber.vercel.app/'},
